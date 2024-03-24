@@ -59,8 +59,8 @@ class FibonacciControllerTest {
 
 	/**
 	 * Confirm that the previous method returns the 12th value in the Fibonacci sequence
-	 * after being called twice from the 14th index as setup by the setup method followed by
-	 * one call to the next method in the second test
+	 * after being called twice from the 14th index as setup by one call to the next 
+	 * method in the second test case
 	 * 
 	 * This test will always run third
 	 * @throws Exception

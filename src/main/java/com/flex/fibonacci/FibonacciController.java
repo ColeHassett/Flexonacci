@@ -30,7 +30,7 @@ public class FibonacciController {
     }
 
     /**
-     * Calculate and return the Fibonacci value at the current index
+     * Calculate and return the Fibonacci sequence value at the current index
      * 
      * @return Fibonacci sequence value at current index
      */
