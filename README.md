@@ -8,4 +8,4 @@ A small Spring REST service to view values of the Fibonacci Sequence.
 
 # Use
 - Run FlexonacciApplication.java
-- Navigate to localhost:8080/<endpoint> in a web browser
+- Navigate to localhost:8080/[endpoint] in a web browser
