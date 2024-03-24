@@ -9,8 +9,8 @@ public class FibonacciController {
     public Integer index = 0;
     public Double value = 0.0;
 
-    // Golden value (phi)
-    public static final Double golden = (1 + Math.sqrt(5)) / 2;
+    // Phi A.K.A. Golden Value, used in calculating Fibonacci sequence at a given index
+    public static final Double phi = (1 + Math.sqrt(5)) / 2;
 
     @GetMapping("/current")
     public Double current() { return value; }
@@ -35,7 +35,7 @@ public class FibonacciController {
      * @return Fibonacci sequence value at current index
      */
     private Double calcValue() {
-        value = Math.rint((Math.pow(golden, index) - Math.pow((1-golden), index)) / Math.sqrt(5));
+        value = Math.rint((Math.pow(phi, index) - Math.pow((1-phi), index)) / Math.sqrt(5));
         return value;
     }
 }
