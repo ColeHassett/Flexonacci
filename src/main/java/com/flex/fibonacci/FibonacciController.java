@@ -13,20 +13,20 @@ public class FibonacciController {
     public static final Double phi = (1 + Math.sqrt(5)) / 2;
 
     @GetMapping("/current")
-    public Double current() { return value; }
+    public Fibonacci current() { return new Fibonacci(index, value); }
 
     @GetMapping("/next")
-    public Double next() {
+    public Fibonacci next() {
         index += 1;
-        return calcValue();
+        return new Fibonacci(index, calcValue());
     }
 
     @GetMapping("/previous")
-    public Double previous() {
+    public Fibonacci previous() {
         if (index > 0) {
             index -= 1;
         }
-        return calcValue();
+        return new Fibonacci(index, calcValue());
     }
 
     /**
